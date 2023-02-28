@@ -1,6 +1,6 @@
 # Algorithm Assessment Agnes
 
-![Headshot of Agnes](./images/image2.png)
+<img alt="Headshot of Agnes" src="./images/image2.png" width="300">
 
 - **Age**: 35
 
