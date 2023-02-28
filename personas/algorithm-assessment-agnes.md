@@ -1,3 +1,6 @@
+# Algorithm Assessment Agnes
+
+![Headshot of Agnes](./images/image2.png)
 
 - **Age**: 35
 
