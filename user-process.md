@@ -1,5 +1,5 @@
 
-- [*Algorithm Assessment Agnes*](./personas/agnes.md) is auditing a startup called Pyrobotics
+- [*Algorithm Assessment Agnes*](./personas/algorithm-assessment-agnes.md) is auditing a startup called Pyrobotics
 
   - Pyrobotics makes robots for setting things on fire.
 
