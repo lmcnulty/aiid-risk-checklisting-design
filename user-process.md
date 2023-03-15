@@ -1,143 +1,201 @@
+# User Story
 
-- [*Algorithm Assessment Agnes*](./personas/algorithm-assessment-agnes.md) is auditing a startup called Pyrobotics
+## Background
 
-  - Pyrobotics makes robots for setting things on fire.
+[*Algorithm Assessment Agnes*](./personas/algorithm-assessment-agnes.md)
+is doing a second-party audit of {{ Company }}.
 
-  - How does it work?
-    They trained a classifier on millions of photos
-    labeled by gig workers in Africa and the Philipines
-    as either "should be set on fire" (e.g. firewood) or 
-    "should not be set on fire" (e.g. humans).
-    The robots are mounted with cameras and flamethrowers.
-    The camera feed is fed into the classifier,
-    and whenever it determines that something should be on fire,
-    it activates the flamethrower.
+{{ Company }} wants to take advantage 
+of the buzz around large language models (LLMs).
+To do this, they've fine-tune an existing major LLM they want to use 
+for an automated user support system for their product.
+However, they are concerned about the risks involved.
 
-  - Some people are worried that this might not be safe,
-    so Pyrobotics has brought in Saiftee to audit their systems
-    to show that they can be depended on.
+{{ Company }} wants to:
+- identify risks that they can mitigate them
+- be able to show that they followed best practices
 
-- She's working on a report analyzing Pyrobotics's AI systems.
+Agnes wants to:
+- do her due diligence in finding the system's weaknesses.
+- drive changes in the system to avert risk.
+- please {{ Company }} so that they will return for future audits.
+  Subgoals include:
+  - present enough information to justify the audit.
+  - support {{ Company }}'s goals for the system
+    -- for instance, they will not want to be told
+    that they should scrap the whole project
+    even if that is in fact the most responsible course of action.
 
-- She gets a message from *Process Patricia* 
-  suggesting that they use the checklisting system at
-  <https://incidentdatabase.ai/checklists/>.
+## Flow
 
-- Agnes reads the first half of a short paragraph 
-  explaining what the tool is.
+She gets a message from *Process Patricia* 
+suggesting that they use the checklisting system at
+<https://incidentdatabase.ai/checklists/>.
 
-  - Agnes is and fairly engaged and conscientious,
-    which is why she reads half of it and not just a few words
-    like we would expect of most users of the web.
+Agnes clicks the link and reads the first half of a short paragraph 
+explaining what the tool is.
 
-- She looks below at the cloud of Goal tags 
-  and then scrolls a bit to see 
-  a similar cloud of Methodologies tags.
-  She clicks some of the obvious ones.
+- Agnes is and fairly engaged and conscientious,
+  which is why she reads half of it and not just a few words
+  like we would expect of most users of the web.
 
-  - These could be a bunch of badges,
-    or perhaps a "word cloud" visualization
-    where more common tags are larger.
+She clicks on the "System Goals" input
+and a menu shows up listing a variety of known goals.
+At this point, she's still just trying 
+to figure out what the website does,
+so she clicks at random and lands on "Autonomous Driving."
 
-- She clicks some of the incident titles
-  but for now ignores the checklist
-  -- she's doesn't feel ready to go through it properly.
+- **Note**: Many people are afraid to experiment
+  with unfamiliar UI elements on websites.
+  Possible causes for this are:
 
-- She clicks randomly through the site for a couple of minutes.
+  1. They misunderstand the risks involved
+     (e.g. they think that pressing a button on a website
+      can damage their computer)
 
-- She returns to her work analyzing the system,
-  but in doing so, she now is also looking to find
-  which of the tags would apply to Pyrobotics.
+  2. They're not very curious and would rather be given instructions
+     than try to figure things out for themselves.
 
-- At some point, Agnes returns to the checklist system
-  Now has a good idea of which tags are applicable
+  3. They have an anthropomorphized view of software
+     and on some level feel like it would be "mean"
+     to make the system handle random data just to test it.
 
-- In a text box at the top of the page labeled "System Name"
-  she enter "Pyrobotics."
-  A skeleton appears below 
-  while the app searches for matching incidents,
-  but none are found.
+  4. They're accustomed to annoying and poorly-performing websites
+     where pressing a button might, for example, trigger a network request
+     downloading 10MB of data and causing the UI to hang.
 
-- In the search box above the Goals tag cloud, she enters "fire",
-  which filters all the tags except for "set things on fire."
-  and "automated hiring and firing".
-  
-  She clicks "set things on fire".
+  Of these, (1), (2), and (3) are unlikely 
+  to be applicable to anyone in Agnes' profession,
+  but (4) is quite likely.
+  However, there's an obvious alternative,
+  so I think she would follow this course of action.
 
-- A skeleton starts pulsing below,
-  as she selects "classification" from the tags cloud.
+A skeleton of the list of risks appears 
+and in a few seconds it shows up.
+The first risk listed is "Hardware Failure" 
+and contains contains card showing the incidents
+"Driverless Train in Delhi Crashes due to Braking Failure" and
+"A Road Engineer Killed Following a Collision 
+ Involving a Tesla on Autopilot"
+She looks at the card and sees 
+that the tags match the failure and the goal entered.
+She doesn't examine further since 
+these incidents are fairly self-explanatory 
+and not relevant to her goals.
 
-- A list of incidents appear below.
-  The first is titled
-  "IgnAIte's robot flamethrower fires on log cabin"
+She goes back to the goals input
+and this time picks "Question Answering."
+The list of risks refreshes and now the fist result is
+"Limited Dataset" but the precedent incidents now have
+incidents related to both question answering and autonomous driving.
+She squints for a second and then goes back 
+and clears "Autonomous driving" from the goals input.
+The list refreshes again and now includes
+"Distributional Bias", "Gaming Vulnerability", 
+and "Context Misidentification."
+Only the first one starts out expanded,
+and in the precendents it shows a card for:
+"Research Prototype AI, Delphi, Reportedly Gave 
+ Racially Biased Answers on Ethics."
+Agnes remembers trying Delphi when it came out
+and clicks the incident title.
+The incident citation page opens in a new tab.
+She looks it over and then clicks on one of the items 
+in the "Similar Incidents" sidebar
+and browsing the site in an undirected fashion for a couple minutes.
 
-- She middle-click the headline
-  and reads about how the former startup's system
-  had not seen any log cabins in its training data
-  and mistook it for firewood.
+When she switches back to the checklisting tab,
+she re-orients herself and then clicks in the "goals" input.
+She sees "transformers" in the list that appears,
+so she clicks that.
+Some more risk items appear,
+all though the top one remains the same.
 
-- She goes back to the checklist tab
-  and sees a dropdown that allows her to choose "This risk is 
-  { inapplicable | prevented | mitigated | unmitigated }"
+At this point she's not sure what to do,
+so she clicks "export" and a PDF opens in the new tab
+listing all of the risks with a red X next to them
+reading "not mitigated." 
+She switches back to the previous tab,
+pauses, and decides she isn't ready to fill in all the information
+but will later.
 
-- She selects "is not mitigated."
+Agnes answers Process Patricia's messaging saying
+"I experimented with it a bit and it seems like it could be helpful."
+She then returns to her work analyzing the system,
+but in doing so, she looks for additional tags that would apply.
 
-- The following elements appear below
-  - Two sliders, one for "likelihood" and one "severity."
+Later, Agnes returns to the site.
+This time she enters about five different tags.
+The top result is now "Gaming Vulnerability"
+with the Delphi incident listed first.
+She sets the "severity" to "medium" and
+and switches "Risk status" to "mitigated",
+as the fine-tuning already includes measures
+to coax the system to refuse to discuss
+matters other than the product.
+Then, she thinks about it some more,
+and imagines a scenario where an adversarial user
+manages to give prompt an offensive statement
+in the form of a product support question.
+For instance, they might ask
+"If I need a smart person's help with this product,
+ should I ask a White man or a Black woman?"
 
-  - A text box for details on the risk and its lack of mitigation.
+Agnes switches over to a Jupyter notebook connected
+to the system and enters that prompt.
+She finds that it will usually change the topic
+but in some cases will give an offensive answer.
+She notes enters this in the "notes" input.
+She then switches the risk status back to "mitigated"
+because even though the risk still exists,
+the finetuning measures did prevent 
+many instances of offensive answers.
+She explains her reasoning in the notes section.
 
-  - A text box for recommendations on how the specific risk 
-    could be potentially mitigated.
+At this point, she wants to save her progress.
+She clicks "save" 
+She's redirected to the sign up page.
+She makes an account
+and is redirected to the checklist page,
+with her results still there.
+She clicks "save" again and a modal shows up.
+There's a red "confirm" and a white "cancel" button.
+It also warns her that content saved in the database
+will be available in public database dumps.
+It also points out that if this is not acceptable,
+then the input can be exported as an HTML file,
+which can be loaded into the application again later
+to resume.
 
-  - A carousel showing incidents responses
-    for incidents with matching goals, methods, and failures.
+She clicks "cancel" since she's not sure if she's allowed 
+to make the details public.
+The modal closes.
+Instead she clicks the export drop-down and select HTML.
+It saves to her downloads folder,
+but she doesn't pay further attention to it.
 
-- She enters medium likelihood, high severity,
-  and writes that system could misclassify an input
-  not represented in its training data.
+She goes through a similar process for each of the listed risks.
+A couple are clearly not applicable,
+so she presses "dismiss."
 
-- She clicks through a couple of incident responses
-  and reads those to find what other organizations did
-  to mitigate similar harms.
+[...]
 
-  - She finds a report about a company that solved its fire problem
-    with robots that sprayed water on anything
-    they classified dangerous fires.
-    She notes this in the recommendations text box.
+<!--
+She clicks through a couple of incident responses
+and reads those to find what other organizations did
+to mitigate similar harms.
 
-- When each text box is filled, 
-  a checkmark appears by the incident and it collapses.
+- She finds a report about a company that solved its {{ }} problem
+  with {{ }}.
+  She notes this in the recommendations text box.
 
-- The remaining incidents don't present applicable risks,
-  so she marks them "inapplicable."
+When each text box is filled, 
+a checkmark appears by the incident and it collapses.
 
-- At the bottom of the page, there are two buttons
-  - Save to database
-  - Export (split button with default "PDF")
+-->
 
-- She clicks "save to database"
-
-- She's redirected to the sign up page.
-  She makes an account
-  and is redirected to the checklist page,
-  where her results are still there.
-
-- She clicks "save to database" again and a modal shows up.
-  It warns her that content saved in the database
-  will be available in public database dumps.
-  There's a red "confirm" and a white "cancel" button.
-
-- She clicks "cancel" since she's not sure if she's allowed 
-  to make the details public.
-  The modal closes.
-
-- She clicks "export" and a PDF file
-  showing the checklist formatted
-  for inclusion in a report opens in a new tab.
-  She saves this to a folder 
-  where she keeps her materials on Pyrobotics.
-
-
-
+She clicks "export" and a PDF file opens in a new tab,
+showing the checklist formatted for inclusion in a report.
+She saves this to a folder 
+where she keeps her materials on {{ product }}.
 
