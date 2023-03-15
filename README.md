@@ -1,1 +1,1 @@
-![Main Screen](./screenshots/main-screen.png)
+<img src="./screenshots/main-screen.png" alt="Main Screen "/>
