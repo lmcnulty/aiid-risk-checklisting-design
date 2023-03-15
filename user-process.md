@@ -12,7 +12,7 @@ for an automated user support system for their product.
 However, they are concerned about the risks involved.
 
 {{ Company }} wants to:
-- identify risks that they can mitigate them
+- identify risks so they can mitigate them
 - be able to show that they followed best practices
 
 Agnes wants to:
