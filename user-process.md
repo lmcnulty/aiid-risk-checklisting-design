@@ -3,25 +3,27 @@
 ## Background
 
 [*Algorithm Assessment Agnes*](./personas/algorithm-assessment-agnes.md)
-is doing a second-party audit of {{ Company }}.
+is doing a second-party audit of "FinderBot"
+developed by Puckett Industries.
 
-{{ Company }} wants to take advantage 
+Puckett wants to take advantage 
 of the buzz around large language models (LLMs).
-To do this, they've fine-tune an existing major LLM they want to use 
+To do this, they've fine-tuned an existing major LLM they want to use 
 for an automated user support system for their product.
-However, they are concerned about the risks involved.
+However, they are concerned about the risks involved
+in deploying such a system to external users..
 
-{{ Company }} wants to:
+Puckett wants to:
 - identify risks so they can mitigate them
 - be able to show that they followed best practices
 
 Agnes wants to:
 - do her due diligence in finding the system's weaknesses.
 - drive changes in the system to avert risk.
-- please {{ Company }} so that they will return for future audits.
+- please Puckett so that they will return for future audits.
   Subgoals include:
   - present enough information to justify the audit.
-  - support {{ Company }}'s goals for the system
+  - support Puckett's goals for the system
     -- for instance, they will not want to be told
     that they should scrap the whole project
     even if that is in fact the most responsible course of action.
@@ -158,44 +160,16 @@ She's redirected to the sign up page.
 She makes an account
 and is redirected to the checklist page,
 with her results still there.
-She clicks "save" again and a modal shows up.
-There's a red "confirm" and a white "cancel" button.
-It also warns her that content saved in the database
-will be available in public database dumps.
-It also points out that if this is not acceptable,
-then the input can be exported as an HTML file,
-which can be loaded into the application again later
-to resume.
-
-She clicks "cancel" since she's not sure if she's allowed 
-to make the details public.
-The modal closes.
-Instead she clicks the export drop-down and select HTML.
-It saves to her downloads folder,
-but she doesn't pay further attention to it.
+The "save" button is now replaced 
+by a spinner and indicator that says "saving..."
+which changes to "saved" afterwards.
 
 She goes through a similar process for each of the listed risks.
 A couple are clearly not applicable,
 so she presses "dismiss."
 
-[...]
-
-<!--
-She clicks through a couple of incident responses
-and reads those to find what other organizations did
-to mitigate similar harms.
-
-- She finds a report about a company that solved its {{ }} problem
-  with {{ }}.
-  She notes this in the recommendations text box.
-
-When each text box is filled, 
-a checkmark appears by the incident and it collapses.
-
--->
-
 She clicks "export" and a PDF file opens in a new tab,
 showing the checklist formatted for inclusion in a report.
 She saves this to a folder 
-where she keeps her materials on {{ product }}.
+where she keeps her materials on FinderBot.
 
