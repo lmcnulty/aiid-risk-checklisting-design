@@ -8,14 +8,14 @@
   - BA in Psychology
     - took some math-heavy behavioral economics and research courses, 
       intro CS
-  - Afterwards got an MS Data Science.
+  - Subsequently earned an MS Data Science.
 
 - **Professional Experience**
-  - After getting her degree at 26, she spent three years 
+  - After getting her masters degree at 26, she spent three years 
     working as a data scientist at a financial institution.
-    She found that her work often had little or no practical impact.
+    She found that her work was often ignored by bank management.
 
-  - Worked at a startup coercing data 
+  - Moved to a startup coercing data 
     into looking sort of like a hockey stick.
     She left after just a year.
 
@@ -23,23 +23,22 @@
 
   For the past 6 years, Agnes has been Working at SaiFTY, 
   a [B Corp](https://en.wikipedia.org/wiki/Benefit_corporation)
-<!-- ^^^^^^ Sort of a compromise between for-profit and non-profit -->
   with the mission of reducing AI harm
   by working with system developers 
   to identify and mitigate risks.
 
 - **Engineering Capacities**:
-  Knows Python, PyTorch, some visualization libraries,
-  and data engineering stuff like Spark.
-  Uses Jupyter Notebooks a lot.
+  Knows Python, dabbled in PyTorch, some visualization libraries,
+  and data engineering frameworks like Spark.
+  Uses Jupyter Notebooks with Pandas in her day to day.
 
 - **Attentiveness to task**
   - If she chose to use the tool,
     then she's going to be highly attentive
-    and play around a bunch with the parameters.
+    and play around with the parameters.
 
   - If she's pressured to use the tool by someone else,
-    then she's going to be slightly--moderately inattentive,
+    then she is moderately inattentive,
     only going down the most obvious path of actions.
 
 - **Customers**
@@ -58,15 +57,14 @@
 - **Stakeholders**
   - The organization Agnes works for
   - The organization that they're auditing
-    - The engineers of the system
+    - The engineers of the system under audit
     - The manager in charge of the project
-  - The users and of the system
+  - The users of the system under audit
   - Non-users on whom the system acts
     - For instance, in an automated system for hiring,
       candidates are not users,
       but they are among the main parties
       affected by the system.
-  - (Potentially) Those whose data was used in developing the system
 
 - **Relationship with risks that are surfaced -- 
   what does she do with them now, what would she ideally do?**
@@ -93,13 +91,13 @@
   that the problems were actually mitigated.
   This is a limitation of second-party audits
 
-  - Unlike a first-party auditor might,
+  - Unlike a first-party auditor,
     she doesn't have authority within the organization,
 
-  - Unlike a third-part auditor,
-    she can't get the media to run hit-pieces on the company
+  - Unlike a third-party auditor,
+    she can't get the media to run stories on the company
     if they don't respond to the problem appropriately
-    -- otherwise she'd have no more business.
+    – otherwise she'd have no more business.
 
 
 ## References

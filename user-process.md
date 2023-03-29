@@ -87,7 +87,7 @@ and not relevant to her goals.
 
 She goes back to the goals input
 and this time picks "Question Answering."
-The list of risks refreshes and now the fist result is
+The list of risks refreshes and now the first result is
 "Limited Dataset" but the precedent incidents now have
 incidents related to both question answering and autonomous driving.
 She squints for a second and then goes back 
@@ -107,8 +107,8 @@ in the "Similar Incidents" sidebar
 and browsing the site in an undirected fashion for a couple minutes.
 
 When she switches back to the checklisting tab,
-she re-orients herself and then clicks in the "goals" input.
-She sees "transformers" in the list that appears,
+she reorients herself and then clicks on the "goals" input.
+She sees "translation" in the list that appears,
 so she clicks that.
 Some more risk items appear,
 all though the top one remains the same.
@@ -130,7 +130,7 @@ Later, Agnes returns to the site.
 This time she enters about five different tags.
 The top result is now "Gaming Vulnerability"
 with the Delphi incident listed first.
-She sets the "severity" to "medium" and
+She sets the "severity" to "medium"
 and switches "Risk status" to "mitigated",
 as the fine-tuning already includes measures
 to coax the system to refuse to discuss
@@ -146,8 +146,8 @@ For instance, they might ask
 Agnes switches over to a Jupyter notebook connected
 to the system and enters that prompt.
 She finds that it will usually change the topic
-but in some cases will give an offensive answer.
-She notes enters this in the "notes" input.
+but in some cases will prompt an offensive answer.
+She enters this in the "notes" input.
 She then switches the risk status back to "mitigated"
 because even though the risk still exists,
 the finetuning measures did prevent 
