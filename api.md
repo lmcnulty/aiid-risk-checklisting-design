@@ -85,8 +85,6 @@ $ curl "https://incidentdatabase.ai/api/riskManagement/v1/risks" \
 }
 ```
 
-A JSON objects containing the full 
-
 If no tags are in the query, every risk up to `limit` is returned.
 
 Suppose it's been some time and you want to find 
