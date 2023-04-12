@@ -3,8 +3,7 @@ by taxonomy editors of the AI Incident Database.
 To find tags available to search by:
 
 ```bash
-$ curl "https://incidentdatabase.ai/api/riskManagement/v1/search_tags"
-  -X POST -H "Content-Type: application/json" --data '{ "limit": 20 }'
+curl "https://incidentdatabase.ai/api/riskManagement/v1/search_tags?limit=20"
 ```
 ```json
 {
@@ -37,14 +36,8 @@ To find risks matching a set of tags,
 ordered by the number of matches:
 
 ```bash
-$ curl "https://incidentdatabase.ai/api/riskManagement/v1/risks" \
-  --request POST --header "Content-Type: application/json" \
-  --data '{
-    "tags": [
-      "GMF:Known AI Technology:Language Modeling",
-      "GMF:Known AI Goal:Question Answering"
-    ]
-  }'
+curl -G "https://incidentdatabase.ai/api/riskManagement/v1/risks" --data-urlencode \
+'tags=GMF:Known AI Technology:Language Modeling___GMF:Known AI Goal:Question Answering'
 ```
 ```json
 {
@@ -92,15 +85,9 @@ risks surfaced since the last search.
 You can provide a date cutoff:
 
 ```bash
-$ curl "https://incidentdatabase.ai/api/riskManagement/v1/risks" \
-  --request POST --header "Content-Type: application/json" \
-  --data '{
-    "tags": [
-      "GMF:Known AI Technology:Language Modeling",
-      "GMF:Known AI Goal:Question Answering"
-    ],
-    "risks_added_since": "2022-11-01"
-  }'
+TAGS='GMF:Known AI Technology:Language Modeling___GMF:Known AI Goal:Question Answering'
+curl -G "https://incidentdatabase.ai/api/riskManagement/v1/risks" \
+--data-urlencode "tags=$TAGS&risks_added_since=2022-11-01"
 ```
 ```json
 {
@@ -133,15 +120,9 @@ for new *and* existing risks,
 you can do so with:
 
 ```bash
-$ curl "https://incidentdatabase.ai/api/riskManagement/v1/risks" \
-  --request POST --header "Content-Type: application/json" \
-  --data '{
-    "tags": [
-      "GMF:Known AI Technology:Language Modeling",
-      "GMF:Known AI Goal:Question Answering"
-    ],
-    "precedents_added_since": "2022-11-01"
-  }'
+TAGS='GMF:Known AI Technology:Language Modeling___GMF:Known AI Goal:Question Answering'
+curl -G "https://incidentdatabase.ai/api/riskManagement/v1/risks" \ 
+--data-urlencode "tags=$TAGS&precedents_added_since=2022-11-01"
 ```
 ```json
 {
@@ -188,8 +169,7 @@ $ curl "https://incidentdatabase.ai/api/riskManagement/v1/risks" \
 You can access a precedent by ID:
 
 ```bash
-$ curl "https://incidentdatabase.ai/api/riskManagement/v1/precedent"
-  -X POST -H "Content-Type: application/json" --data '{ "incident_id": 146 }'
+curl "https://incidentdatabase.ai/api/riskManagement/v1/precedent?incident_id=146"
 ```
 ```json
 {
@@ -212,8 +192,7 @@ $ curl "https://incidentdatabase.ai/api/riskManagement/v1/precedent"
 You can get all known risk tags in the same manner as search tags:
 
 ```bash
-$ curl "https://incidentdatabase.ai/api/riskManagement/v1/risk_tags"
-  -X POST -H "Content-Type: application/json" --data '{ "limit": 20 }'
+curl "https://incidentdatabase.ai/api/riskManagement/v1/risk_tags?limit=20"
 ```
 ```json
 {
