@@ -1,6 +1,7 @@
 - [Algorithm Assessment Agnes](./personas/algorithm-assessment-agnes.md)
 - [User Story](./user-process.md)
 - [API Sketch](./api.md)
+- [Schema Sketch](./schema.md)
 
 ## Mockup
 
