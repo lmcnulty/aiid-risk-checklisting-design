@@ -2,6 +2,7 @@
 - [User Story](./user-process.md)
 - [API Sketch](./api.md)
 - [Schema Sketch](./schema.md)
+- [Slides - April MTF Progress Update](./slides.pdf)
 
 ## Mockup
 
